@@ -21,6 +21,53 @@ CREATE TABLE faculty(
     fname char(20),
     deptid int);
 
+
+
+INSERT INTO student (snum, sname, major, level, age) VALUES
+(1001, 'aditya', 'ise', 'jr', 21),
+(1002, 'ben', 'ise', 'jr', 22),
+(1003, 'connor', 'ise', 'sr', 23),
+(1004, 'davey', 'cse', 'jr', 24),
+(1005, 'evelyn', 'cse', 'jr', 25),
+(1006, 'franklin', 'cse', 'sr', 26),
+(1007, 'geralt', 'history', 'jr', 27),
+(1008, 'hank', 'history', 'sr', 28);
+
+
+INSERT INTO class (cname, meets_at, room, fid) VALUES
+('ancient_history', '12:00:00', 'r124', 2004),
+('c', '12:00:00', 'r123', 2002),
+('java', '10:00:00', 'r122', 2001),
+('java', '13:00:00', 'r125', 2002),
+('javascript', '09:00:00', 'r128', 2003),
+('python', '09:00:00', 'r121', 2001);
+
+
+INSERT INTO enrolled (snum, cname) VALUES
+(1001, 'javascript'),
+(1001, 'python'),
+(1003, 'java'),
+(1004, 'c'),
+(1006, 'java'),
+(1007, 'ancient_history'),
+(1007, 'c');
+
+
+
+
+INSERT INTO faculty (fid, fname, deptid) VALUES
+(2001, 'ivan', 3001),
+(2002, 'jason', 3002),
+(2003, 'kirby', 3003),
+(2004, 'leon', 3001);
+
+
+
+
+
+
+
+
 q1) 1. Find the names of all juniors (Level = JR) who are enrolled in a class taught
 by I. Teacher.
 
